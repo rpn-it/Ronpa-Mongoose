@@ -18,7 +18,14 @@
   "dependencies": {},
   "devDependencies": {
     "@sudoo/io": "^1.6.1",
-    "@sudoo/triforce": "^1.9.0"
+    "@sudoo/triforce": "^1.9.0",
+    "@types/mongoose": "^5.5.23",
+    "mongoose": "^5.7.7",
+    "ronpa": "^1.1.3"
+  },
+  "peerDependencies": {
+    "mongoose": "*",
+    "ronpa": "*"
   },
   "nyc": {
     "extension": [
