@@ -1,6 +1,6 @@
 {
   "name": "@ronpa/mongoose",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": ":ram: Mongoose implement for Ronpa",
   "repository": {
     "type": "git",
