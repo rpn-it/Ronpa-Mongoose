@@ -12,6 +12,10 @@ export const RonpaThesisSchema = new Schema({
         type: [String],
         required: true,
     },
+    extras: {
+        type: Schema.Types.Mixed,
+        required: false,
+    },
 }, {
     _id: false,
 });

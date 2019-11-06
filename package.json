@@ -1,6 +1,6 @@
 {
   "name": "@ronpa/mongoose",
-  "version": "1.0.1",
+  "version": "1.2.2",
   "description": ":ram: Mongoose implement for Ronpa",
   "repository": {
     "type": "git",
@@ -18,10 +18,10 @@
   "dependencies": {},
   "devDependencies": {
     "@sudoo/io": "^1.6.1",
-    "@sudoo/triforce": "^1.9.0",
-    "@types/mongoose": "^5.5.23",
-    "mongoose": "^5.7.7",
-    "ronpa": "^1.1.3"
+    "@sudoo/triforce": "^1.10.0",
+    "@types/mongoose": "^5.5.29",
+    "mongoose": "^5.7.8",
+    "ronpa": "^1.2.2"
   },
   "peerDependencies": {
     "mongoose": "*",
