@@ -71,6 +71,10 @@ export const RonpaFlatRecordSchema = new Schema({
         type: [ReactionSchema],
         required: false,
     },
+    reply: {
+        type: String,
+        required: false,
+    },
     extras: {
         type: Schema.Types.Mixed,
         required: false,
