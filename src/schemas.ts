@@ -1,5 +1,5 @@
 /**
- * @author RPN-IT
+ * @author WMXPY
  * @namespace Mongoose
  * @description Schemas
  */
