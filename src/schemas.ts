@@ -6,7 +6,7 @@
 
 import { Schema } from "mongoose";
 
-export const RonpaThesisSchema = new Schema({
+export const RonpaThesisSchema: Schema = new Schema({
 
     insiders: {
         type: [String],
@@ -20,7 +20,7 @@ export const RonpaThesisSchema = new Schema({
     _id: false,
 });
 
-export const ReactionSchema = new Schema({
+export const ReactionSchema: Schema = new Schema({
 
     at: {
         type: Date,
@@ -38,7 +38,29 @@ export const ReactionSchema = new Schema({
     _id: false,
 });
 
-export const RonpaFlatRecordSchema = new Schema({
+export const EditHistorySchema: Schema = new Schema({
+
+    at: {
+        type: Date,
+        required: true,
+    },
+    by: {
+        type: String,
+        required: true,
+    },
+    before: {
+        type: Schema.Types.Mixed,
+        required: true,
+    },
+    after: {
+        type: Schema.Types.Mixed,
+        required: true,
+    },
+}, {
+    _id: false,
+});
+
+export const RonpaFlatRecordSchema: Schema = new Schema({
 
     // Required
     id: {
@@ -69,6 +91,10 @@ export const RonpaFlatRecordSchema = new Schema({
     },
     reactions: {
         type: [ReactionSchema],
+        required: false,
+    },
+    editHistories: {
+        type: [EditHistorySchema],
         required: false,
     },
     reply: {
