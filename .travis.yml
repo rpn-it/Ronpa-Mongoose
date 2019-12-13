@@ -9,6 +9,7 @@ cache: npm
 
 install:
   - make install
+  - npm install codecov nyc -g
 
 before_script:
   - make
