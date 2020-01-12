@@ -19,9 +19,9 @@
   "devDependencies": {
     "@sudoo/io": "^1.6.1",
     "@sudoo/triforce": "^2.1.0",
-    "@types/mongoose": "^5.5.38",
-    "mongoose": "^5.8.4",
-    "ronpa": "^1.8.2"
+    "@types/mongoose": "^5.5.41",
+    "mongoose": "^5.8.7",
+    "ronpa": "^1.9.0"
   },
   "peerDependencies": {
     "mongoose": "*",

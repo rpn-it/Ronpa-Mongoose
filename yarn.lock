@@ -88,10 +88,10 @@
     "@types/bson" "*"
     "@types/node" "*"
 
-"@types/mongoose@^5.5.38":
-  version "5.5.38"
-  resolved "https://registry.yarnpkg.com/@types/mongoose/-/mongoose-5.5.38.tgz#798fb8f4a50e21953138daf5195c0d8db9aa2f40"
-  integrity sha512-W+vLJ4t0DUQhnV/ivLBLVCOvx3UnU/HgrKrEeHCUwE9VGDTdoOQOgOTiElErf+ome9zZUek6VZil5t7HfJvO+w==
+"@types/mongoose@^5.5.41":
+  version "5.5.41"
+  resolved "https://registry.yarnpkg.com/@types/mongoose/-/mongoose-5.5.41.tgz#bb75ae8e93fa613f8f04a12952b5a52a714b96d9"
+  integrity sha512-Hg8amaVUUUk7iB0TXJ2Ki1Agb4IuJag5R6U5i1H+b+1wclf93NLOEPemmbd4Bc9ZqOtVUmjPIc00SwCqEHTbVQ==
   dependencies:
     "@types/mongodb" "*"
     "@types/node" "*"
@@ -412,10 +412,10 @@ mongoose-legacy-pluralize@1.0.2:
   resolved "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
   integrity sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
 
-mongoose@^5.8.4:
-  version "5.8.4"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.8.4.tgz#bd35697b2f800bb919c142b1443630fbab382a35"
-  integrity sha512-jQjLckUILEQUqBuG+ihjtA9OLmrqcIG5n+vaeHpR++TG8/ug5yy5ogkDnybTSq8Ql5OORud3+OCOc2Uw96q32w==
+mongoose@^5.8.7:
+  version "5.8.7"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.8.7.tgz#d175f8ac4c8ed7bf57b71aa4980aaa3525b923b2"
+  integrity sha512-PCCuTrdxpUmO86L1geXWE+9AvJRFuneIrMUT2hB/LXZ+5HIGOIfE6OSMU7cd8wFU7JRINP9V73zZ9YsmAbt+Iw==
   dependencies:
     bson "~1.1.1"
     kareem "2.3.1"
@@ -502,10 +502,10 @@ resolve@^1.3.2:
   dependencies:
     path-parse "^1.0.6"
 
-ronpa@^1.8.2:
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/ronpa/-/ronpa-1.8.2.tgz#f8982eb31f5e3f171a9fbab2c3e52ea1f359aeb8"
-  integrity sha512-+RDpsUFiC1YdjYq1uLN1XbFl2t032GgTv/6kok8y4ciH8VAqmpqFCnnJKrJqUG9/FXZKzk6raIYkQ8SC6qwXSQ==
+ronpa@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/ronpa/-/ronpa-1.9.0.tgz#33a0d379bc61ab8bc13655499743f9dbbe22ca4d"
+  integrity sha512-LrTdBCYzLNrPSPxOchhM+0GSjtn4+UKaqthOt7d1gUzx9Wd4VhngqyRklrfZHNGYPy1LQz6nN9/jdkUjRS3prA==
   dependencies:
     "@sudoo/random" "^2.0.3"
 
