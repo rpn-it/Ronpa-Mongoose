@@ -85,6 +85,10 @@ export const RonpaFlatRecordSchema: Schema = new Schema({
     },
 
     // Optional
+    thesis: {
+        type: RonpaThesisSchema,
+        required: false,
+    },
     type: {
         type: String,
         required: false,
@@ -101,12 +105,20 @@ export const RonpaFlatRecordSchema: Schema = new Schema({
         type: String,
         required: false,
     },
-    extras: {
-        type: Schema.Types.Mixed,
+
+    // Notations
+    isRobot: {
+        type: Schema.Types.Boolean,
         required: false,
     },
-    thesis: {
-        type: RonpaThesisSchema,
+    isGenerated: {
+        type: Schema.Types.Boolean,
+        required: false,
+    },
+
+    // Extras
+    extras: {
+        type: Schema.Types.Mixed,
         required: false,
     },
 }, {
