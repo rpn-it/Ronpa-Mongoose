@@ -1,27 +1,20 @@
-/**
- * @author WMXPY
- * @namespace Mongoose
- * @description Schemas
- */
-
-import { Schema } from "mongoose";
-
-export const RonpaThesisSchema: Schema = new Schema({
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.RonpaFlatRecordSchema = exports.EditHistorySchema = exports.ReactionSchema = exports.RonpaThesisSchema = void 0;
+var mongoose_1 = require("mongoose");
+exports.RonpaThesisSchema = new mongoose_1.Schema({
     insiders: {
         type: [String],
         required: true,
     },
     extras: {
-        type: Schema.Types.Mixed,
+        type: mongoose_1.Schema.Types.Mixed,
         required: false,
     },
 }, {
     _id: false,
 });
-
-export const ReactionSchema: Schema = new Schema({
-
+exports.ReactionSchema = new mongoose_1.Schema({
     at: {
         type: Date,
         required: true,
@@ -37,9 +30,7 @@ export const ReactionSchema: Schema = new Schema({
 }, {
     _id: false,
 });
-
-export const EditHistorySchema: Schema = new Schema({
-
+exports.EditHistorySchema = new mongoose_1.Schema({
     at: {
         type: Date,
         required: true,
@@ -49,20 +40,17 @@ export const EditHistorySchema: Schema = new Schema({
         required: true,
     },
     before: {
-        type: Schema.Types.Mixed,
+        type: mongoose_1.Schema.Types.Mixed,
         required: true,
     },
     after: {
-        type: Schema.Types.Mixed,
+        type: mongoose_1.Schema.Types.Mixed,
         required: true,
     },
 }, {
     _id: false,
 });
-
-export const RonpaFlatRecordSchema: Schema = new Schema({
-
-    // Required
+exports.RonpaFlatRecordSchema = new mongoose_1.Schema({
     id: {
         type: String,
         required: true,
@@ -80,13 +68,11 @@ export const RonpaFlatRecordSchema: Schema = new Schema({
         required: true,
     },
     content: {
-        type: Schema.Types.Mixed,
+        type: mongoose_1.Schema.Types.Mixed,
         required: true,
     },
-
-    // Optional
     thesis: {
-        type: RonpaThesisSchema,
+        type: exports.RonpaThesisSchema,
         required: false,
     },
     type: {
@@ -94,35 +80,31 @@ export const RonpaFlatRecordSchema: Schema = new Schema({
         required: false,
     },
     reactions: {
-        type: [ReactionSchema],
+        type: [exports.ReactionSchema],
         required: false,
     },
     editHistories: {
-        type: [EditHistorySchema],
+        type: [exports.EditHistorySchema],
         required: false,
     },
     reply: {
         type: String,
         required: false,
     },
-
-    // Notations
     isRobot: {
-        type: Schema.Types.Boolean,
+        type: mongoose_1.Schema.Types.Boolean,
         required: false,
     },
     isGenerated: {
-        type: Schema.Types.Boolean,
+        type: mongoose_1.Schema.Types.Boolean,
         required: false,
     },
     isRead: {
-        type: Schema.Types.Boolean,
+        type: mongoose_1.Schema.Types.Boolean,
         required: false,
     },
-
-    // Extras
     extras: {
-        type: Schema.Types.Mixed,
+        type: mongoose_1.Schema.Types.Mixed,
         required: false,
     },
 }, {
